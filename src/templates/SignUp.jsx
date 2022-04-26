@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import { TextInput } from "../components/UIkit";
+import { PrimaryButton, TextInput } from "../components/UIkit";
 
 const SignUp = () => {
   const [username, setUsername] = useState(""),
@@ -79,6 +79,12 @@ const SignUp = () => {
         type={"password"}
         onChange={inputConfirmPassword}
       />
+      <div className="center">
+        <PrimaryButton
+          label={"アカウントを登録する"}
+          onClick={() => console.log("Clicked!")}
+        />
+      </div>
     </div>
   );
 };
